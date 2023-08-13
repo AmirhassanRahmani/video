@@ -1,24 +1,25 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
+import Main from "./components/Main";
+import Layout from "./components/layout/Layout";
+import { Routes, Route } from "react-router-dom";
+import Page from "./components/page/Page";
+import PageTwo from "./components/page/PageTwo";
+import Search from "./components/search/Search";
+import Notif from "./components/notif/Notif";
+import PageThree from "./components/page/PageThree";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Routes>
+      <Route path="/" element={<Layout />}>
+        <Route index element={<Main />} />
+        <Route path="vidio/:vidioId" element={<Page />} />
+        <Route path="vidioRow2/:vidioId" element={<PageTwo />} />
+        <Route path="vidioRow3/:vidioId" element={<PageThree />} />
+        <Route path="search" element={<Search />} />
+        <Route path="notif" element={<Notif />} />
+      </Route>
+    </Routes>
   );
 }
 
