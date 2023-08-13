@@ -15,7 +15,7 @@ const Search = () => {
         <div className="inputAndIcon flex items-center justify-between">
           <ArrowBackIcon
             className="!text-[2rem]"
-            onClick={() => navigate("/")}
+            onClick={() => navigate("/video")}
           />
           <input
             type="text"

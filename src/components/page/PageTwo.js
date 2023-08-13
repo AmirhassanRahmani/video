@@ -172,7 +172,7 @@ const PageTwo = () => {
                   <div className="arrowBack absolute top-4 left-4 bg-white-play w-[2.8rem] h-[2.8rem] rounded-full flex items-center justify-center">
                     <ArrowBackIcon
                       className="text-white !text-[2rem]"
-                      onClick={() => navigate("/")}
+                      onClick={() => navigate("/video")}
                     />
                   </div>
 
@@ -243,7 +243,7 @@ const PageTwo = () => {
                   <span>
                     <ArrowBackIcon
                       className="!text-[2.5rem] mr-auto"
-                      onClick={() => navigate("/")}
+                      onClick={() => navigate("/video")}
                     />
                   </span>
                   <span className="text-[2rem] font-bold mx-auto">

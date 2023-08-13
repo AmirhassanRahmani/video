@@ -18,7 +18,7 @@ const Notif = () => {
           <div className="notifArrowAndNotifText flex items-center gap-1">
             <ArrowBackIcon
               className="!text-[1.8rem]"
-              onClick={() => navigate("/")}
+              onClick={() => navigate("/video")}
             />
             <span className="font-bold text-[1.4rem]">Notifikasi</span>
           </div>

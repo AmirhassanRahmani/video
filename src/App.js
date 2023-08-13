@@ -11,7 +11,7 @@ import PageThree from "./components/page/PageThree";
 function App() {
   return (
     <Routes>
-      <Route path="/" element={<Layout />}>
+      <Route path="/video" element={<Layout />}>
         <Route index element={<Main />} />
         <Route path="vidio/:vidioId" element={<Page />} />
         <Route path="vidioRow2/:vidioId" element={<PageTwo />} />
